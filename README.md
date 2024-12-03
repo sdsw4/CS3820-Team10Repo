@@ -10,7 +10,20 @@ on the day and time.
 The specific intersection is located at Coldwater, Michigan and the local township has provided
 a live video stream at https://www.youtube.com/watch?v=ByED80IKdIU. The live-stream is down-
 loaded constantly, with downloaded videos sorted per day.
-[TODO: The data analysis stuff]
+
+To implement the data analysis model model, you must first understand that this is a linear regression machine learning model that predicts total amount of cars crossing the intersection in a time-series manner.
+This program compares two different models produced from the time:
+```
+Time vs Total.
+```
+And
+```
+Time, N, W, E, S vs Total
+```
+
+We are taking 80% of the data to train the model and 20% to test the model.
+
+Interestingly enough, the latter model was spectacularly more accurate according to r2 score.
 ## Installation and Setup
 The installation and setup processes are fairly straight-forward.
 To install and use the Image Analysis component, several dependencies must be installed first.
