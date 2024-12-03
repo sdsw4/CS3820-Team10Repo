@@ -58,4 +58,16 @@ matplotlib
 pandas
 ```
 
-4 Developer Information
+## Developer Information
+It is possible to change the "hit regions" of the detector by changing the values in the
+```
+checkIfInRegion(centerPointX, centerPointY)
+```
+To fine-tune to a new environment.
+
+Furthermore, it is possible to change the model in use by modifying
+```
+pretrained_model
+```
+
+Otherwise, much of the system is automated, allowing for different frame-rates, videos and lengths.
